@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Lock for Whatsapp</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="chocha">Hi there! \n We will protect your Whatsapp \n From Prying eyes with a pin/pattern of your own \n\n Sounds nice huh?</string>
+
+    <string-array name="locks">
+        <item>Pattern Lock</item>
+        <item>Pin Lock</item>
+    </string-array>
+
+    <string-array name="locks_entryValues">
+        <item>101</item>
+        <item>100</item>
+    </string-array>
+
+    <string name="contact_us">Having Trouble? Please contact us at <u>thejellocompany@gmail.com</u></string>
+</resources>

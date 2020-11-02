@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="General ">
+
+
+
+  <SwitchPreference
+      android:key="isEnabled"
+      android:title="Enable Lock"
+      android:defaultValue="true"
+      android:summary="Allow to always lock whatsapp"
+      />
+
+    <SwitchPreference
+        android:key="isStartupEnabled"
+        android:title="Start up  Protection"
+        android:defaultValue="true"
+        android:summary="Allow to prevent lock service from being killed"
+        />
+
+        <Preference
+            android:key="pref_rate"
+            android:title="Rate us"
+            android:summary="Like the app? Please rate us 5 stars and write us a good review"/>
+        <Preference
+            android:key="pref_feedback"
+            android:title="Give us Feedback"
+            android:summary="Help us improve whatsapp locker"
+            />
+
+        <Preference
+            android:key="more"
+            android:title="More Apps"
+            android:summary="Get more free apps"/>
+
+
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Security Settings">
+        <ListPreference
+            android:key="lock_type"
+            android:title="Lock type"
+            android:summary="Choose your locker"
+            android:entries="@array/locks"
+            android:entryValues="@array/locks_entryValues"
+            android:defaultValue="100"
+            >
+
+        </ListPreference>
+        <Preference
+            android:key="pin"
+            android:title="Change PIN"
+            android:summary="Set a new pin"
+            >
+            </Preference>
+
+    </PreferenceCategory>
+
+
+
+
+</PreferenceScreen>

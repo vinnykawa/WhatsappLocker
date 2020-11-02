@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary">
+
+    <TextView
+        android:layout_alignParentTop="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Please choose your preffered security option."
+        android:textColor="#FFF"
+        android:id="@+id/textView2"
+        android:layout_margin="16dip"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal" />
+
+<RadioGroup
+   android:layout_below="@+id/textView2"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/radioGroup"
+    android:checkedButton="@+id/radio_pin"
+    android:background="@color/primary"
+    android:layout_above="@+id/btn_next"
+    android:padding="16dip">
+
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PIN Lock"
+        android:id="@+id/radio_pin"
+        android:layout_margin="16dip"
+        android:layout_centerHorizontal="true"
+        android:textColor="#FFF"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_gravity="center" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pattern Lock"
+        android:id="@+id/radio_pattern"
+        android:textColor="#FFF"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dip"
+        android:layout_marginBottom="16dip"
+        android:layout_below="@+id/radio_pin"
+        android:layout_alignLeft="@+id/radio_pin"
+        android:layout_alignStart="@+id/radio_pin" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Don't worry , you can change this option later from settings menu."
+        android:padding="16dip"
+        android:gravity="center"
+        android:textColor="#FFF"
+        android:id="@+id/textView3"
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@+id/radio_pattern"
+        android:layout_centerHorizontal="true" />
+
+
+</RadioGroup>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:id="@+id/btn_next"
+        android:gravity="center"
+        android:textColor="#FFF"
+        android:layout_alignParentBottom="true"
+        android:background="@color/primary_dark"
+        />
+    </RelativeLayout>
